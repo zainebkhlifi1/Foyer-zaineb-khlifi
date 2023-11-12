@@ -17,7 +17,7 @@ public class Chambre {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)// AUTO-INCREMENT -->l'id est generer automatiquement de la staratigie de la BD
 
-  private long idChanbre;
+  private long idChambre;
   private long numeroChambre;
   private TypeChambre typeC;
 
