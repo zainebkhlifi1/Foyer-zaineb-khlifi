@@ -11,7 +11,7 @@ import java.util.Date;
 public class Reservation {
   @Id
   private long idReservation;
-  private Date anneUniversitaire;
+  private Date anneeUniversitaire;
   private Boolean estValide;
 
 
