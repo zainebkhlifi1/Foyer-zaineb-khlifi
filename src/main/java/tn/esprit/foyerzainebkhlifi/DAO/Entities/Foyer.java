@@ -1,8 +1,10 @@
 package tn.esprit.foyerzainebkhlifi.DAO.Entities;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
+@Data
 public class Foyer {
 @Id
 
