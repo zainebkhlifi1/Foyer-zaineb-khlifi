@@ -1,10 +1,9 @@
 package tn.esprit.foyerzainebkhlifi.DAO.Entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.Set;
 
 @Entity
 @Getter
@@ -21,6 +20,12 @@ public class Bloc {
     private long idBloc;
     private String nomBloc;
     private long capaciteBloc;
+@OneToMany(cascade = CascadeType.ALL,mappedBy = "bloc")
+
+
+Set<Chambre> chambre;
+
+
 
 
 

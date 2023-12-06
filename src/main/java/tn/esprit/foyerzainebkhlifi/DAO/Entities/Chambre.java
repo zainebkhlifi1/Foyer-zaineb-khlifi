@@ -1,10 +1,10 @@
 package tn.esprit.foyerzainebkhlifi.DAO.Entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.Set;
 
 @Entity
 @Getter
@@ -20,7 +20,12 @@ public class Chambre {
   private long idChambre;
   private long numeroChambre;
   private TypeChambre typeC;
+  @OneToMany(cascade = CascadeType.ALL)
+  Set<Reservation> reservations;
 
+  @JsonIgnoreProperties("bloc")
+  @ManyToOne
+  Bloc bloc;
 
 }
 
