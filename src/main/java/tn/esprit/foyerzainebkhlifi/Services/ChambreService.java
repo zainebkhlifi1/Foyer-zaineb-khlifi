@@ -1,11 +1,12 @@
 package tn.esprit.foyerzainebkhlifi.Services;
 
 import jakarta.persistence.EntityNotFoundException;
+import org.springframework.stereotype.Service;
 import tn.esprit.foyerzainebkhlifi.DAO.Entities.Chambre;
 import tn.esprit.foyerzainebkhlifi.DAO.Repositories.ChambreRepository;
 
 import java.util.List;
-
+@Service
 public class ChambreService implements IChambreService {
     ChambreRepository chambreRepository;
 
