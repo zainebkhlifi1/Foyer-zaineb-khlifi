@@ -1,12 +1,13 @@
 package tn.esprit.foyerzainebkhlifi.Services;
 
+import org.springframework.stereotype.Service;
 import tn.esprit.foyerzainebkhlifi.DAO.Entities.Etudiant;
 import tn.esprit.foyerzainebkhlifi.DAO.Repositories.EtudiantRepository;
 import tn.esprit.foyerzainebkhlifi.Services.IEtudiantService;
 
 import java.util.Collections;
 import java.util.List;
-
+@Service
 public class EtudiantServices implements IEtudiantService {
     EtudiantRepository etudiantRepository;
     @Override
